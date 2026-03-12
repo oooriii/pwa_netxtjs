@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" fill="#0b1020"/>
+  <rect x="24" y="24" width="144" height="144" rx="20" fill="none" stroke="#7c93ff" stroke-width="8"/>
+  <text x="96" y="108" fill="#dbe4ff" font-size="36" text-anchor="middle" font-family="Arial">PWA</text>
+</svg>
