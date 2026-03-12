@@ -51,3 +51,10 @@
 - [x] Fer screenshot de la UI final.
 - [x] Revisió final del `PLAN.md` (tot marcat).
 - [x] Commit final.
+
+
+### Pas 7 — Hotfix CI lockfile
+- [x] Revisar error de GitHub Actions relacionat amb lockfile.
+- [x] Ajustar workflows per no requerir lockfile inexistent al checkout.
+- [x] Test/check: validació sintàctica dels YAML i revisió de diff.
+- [x] Commit del pas.
