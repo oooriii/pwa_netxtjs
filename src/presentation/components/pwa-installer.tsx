@@ -10,14 +10,38 @@ interface BeforeInstallPromptEvent extends Event {
 
 export function PwaInstaller() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
-  const [installStatus, setInstallStatus] = useState("Instal·lació no disponible");
+  const [installStatus, setInstallStatus] = useState("Comprovant instal·lació...");
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   useEffect(() => {
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").catch(() => {
-        setInstallStatus("No s'ha pogut registrar el service worker");
-      });
+    if (typeof window === "undefined") return;
+
+    const isStandalone = window.matchMedia("(display-mode: standalone)").matches;
+    if (isStandalone) {
+      setInstallStatus("App instal·lada (mode standalone)");
+      return;
     }
+
+    if (!window.isSecureContext) {
+      setInstallStatus("La instal·lació PWA requereix HTTPS o localhost");
+      return;
+    }
+
+    if (!("serviceWorker" in navigator)) {
+      setInstallStatus("Aquest navegador no suporta Service Worker");
+      return;
+    }
+
+    const swUrl = `${basePath}/sw.js`;
+    navigator.serviceWorker
+      .register(swUrl, { scope: `${basePath || "/"}/` })
+      .then(() => {
+        setInstallStatus("Service Worker registrat. Esperant prompt d'instal·lació...");
+      })
+      .catch(() => {
+        setInstallStatus("No s'ha pogut registrar el Service Worker");
+      });
+
 
     const onBeforeInstallPrompt = (event: Event) => {
       event.preventDefault();
@@ -30,7 +54,8 @@ export function PwaInstaller() {
     return () => {
       window.removeEventListener("beforeinstallprompt", onBeforeInstallPrompt);
     };
-  }, []);
+  }, [basePath]);
+
 
   const handleInstall = async () => {
     if (!deferredPrompt) return;

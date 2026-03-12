@@ -80,3 +80,28 @@
 - [x] Afegir dependència `@eslint/eslintrc` per compatibilitat explícita.
 - [x] Test/check: validació sintàctica dels fitxers modificats.
 - [x] Commit del pas.
+
+
+
+### Pas 11 — Hotfix GitHub Pages enablement
+- [x] Diagnosticar error `Get Pages site failed` a `configure-pages`.
+- [x] Configurar `actions/configure-pages` amb `enablement: true`.
+- [x] Test/check: validació YAML del workflow.
+- [x] Commit del pas.
+
+
+### Pas 12 — Hotfix registre Service Worker i instal·lació PWA
+- [x] Diagnosticar registre SW fallant en entorns amb `basePath` (GitHub Pages).
+- [x] Corregir rutes de SW/manifest/icons per suportar subpath i instal·lació PWA.
+- [x] Millorar missatges d'estat a la UI d'instal·lació (HTTPS/standalone/prompt).
+- [x] Test/check: lint/build o validacions alternatives segons entorn.
+- [x] Commit del pas.
+
+
+### Pas 13 — Millora UX visual i canvi de tema
+- [x] Afegir icones i millorar botons de les funcionalitats.
+- [x] Afegir indicador LED verd/vermell d'estat per feature.
+- [x] Implementar selector de tema (clar, fosc, sistema).
+- [x] Test/check: validacions disponibles en entorn actual i screenshot.
+- [x] Commit del pas.
+

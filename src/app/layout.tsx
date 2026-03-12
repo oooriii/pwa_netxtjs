@@ -4,8 +4,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "PWA Next.js Template",
   description: "Template PWA amb Next.js + DDD + SOLID",
-  manifest: "/manifest.webmanifest",
-};
+  manifest: "manifest.webmanifest",
+
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
