@@ -58,3 +58,10 @@
 - [x] Ajustar workflows per no requerir lockfile inexistent al checkout.
 - [x] Test/check: validació sintàctica dels YAML i revisió de diff.
 - [x] Commit del pas.
+
+
+### Pas 8 — Hotfix lint ESM import
+- [x] Identificar l'error d'import d'`eslint-config-next/core-web-vitals`.
+- [x] Corregir l'import ESM cap a `core-web-vitals.js`.
+- [x] Test/check: validació del fitxer de configuració ESLint.
+- [x] Commit del pas.
