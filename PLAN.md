@@ -72,3 +72,11 @@
 - [x] Fer `eslint.config.mjs` robust davant export object/array.
 - [x] Test/check: validació sintàctica del fitxer de config.
 - [x] Commit del pas.
+
+
+### Pas 10 — Hotfix flat ESLint config
+- [x] Diagnosticar incompatibilitat entre eslintrc i flat config.
+- [x] Migrar `eslint.config.mjs` a `FlatCompat` amb `next/core-web-vitals`.
+- [x] Afegir dependència `@eslint/eslintrc` per compatibilitat explícita.
+- [x] Test/check: validació sintàctica dels fitxers modificats.
+- [x] Commit del pas.
