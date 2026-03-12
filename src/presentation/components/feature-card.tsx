@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-<<<<<<< HEAD
+
 import { Bell, Camera, Circle, LocateFixed, Play, ShieldCheck } from "lucide-react";
-=======
->>>>>>> origin/main
+
 import { Feature } from "@/domain/features/feature";
 import { FeatureService } from "@/application/features/feature-service";
 import { BrowserFeatureGateway } from "@/infrastructure/browser/browser-feature-gateway";
@@ -14,15 +13,12 @@ const featureService = new FeatureService(new BrowserFeatureGateway());
 
 type Status = "idle" | "working" | "done";
 
-<<<<<<< HEAD
 const iconByFeature = {
   notifications: Bell,
   camera: Camera,
   geolocation: LocateFixed,
 };
 
-=======
->>>>>>> origin/main
 export function FeatureCard({ feature }: { feature: Feature }) {
   const [supported, setSupported] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
@@ -39,11 +35,8 @@ export function FeatureCard({ feature }: { feature: Feature }) {
     return "Preparat";
   }, [status, supported]);
 
-<<<<<<< HEAD
   const FeatureIcon = iconByFeature[feature.key];
 
-=======
->>>>>>> origin/main
   const handleEnable = async () => {
     setStatus("working");
     const permission = await featureService.enable(feature.key);
@@ -62,7 +55,6 @@ export function FeatureCard({ feature }: { feature: Feature }) {
     <article className="rounded-lg border border-[var(--border)] bg-[var(--card)] p-5 shadow-lg shadow-black/20">
       <div className="mb-4 flex items-start justify-between gap-3">
         <div>
-<<<<<<< HEAD
           <h3 className="flex items-center gap-2 text-lg font-semibold">
             <FeatureIcon className="h-5 w-5" />
             {feature.title}
@@ -83,22 +75,7 @@ export function FeatureCard({ feature }: { feature: Feature }) {
         </Button>
         <Button size="sm" onClick={handleTest} disabled={!supported || status === "working"}>
           <Play className="mr-1 h-4 w-4" /> Provar
-=======
-          <h3 className="text-lg font-semibold">{feature.title}</h3>
-          <p className="mt-1 text-sm text-slate-300">{feature.description}</p>
-        </div>
-        <span className="rounded-md bg-slate-800 px-2 py-1 text-xs">{badge}</span>
-      </div>
 
-      <p className="mb-4 text-sm text-slate-200">{message}</p>
-
-      <div className="flex gap-2">
-        <Button variant="outline" size="sm" onClick={handleEnable} disabled={!supported || status === "working"}>
-          Activar
-        </Button>
-        <Button size="sm" onClick={handleTest} disabled={!supported || status === "working"}>
-          Provar
->>>>>>> origin/main
         </Button>
       </div>
     </article>

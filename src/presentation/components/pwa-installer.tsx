@@ -10,7 +10,6 @@ interface BeforeInstallPromptEvent extends Event {
 
 export function PwaInstaller() {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
-<<<<<<< HEAD
   const [installStatus, setInstallStatus] = useState("Comprovant instal·lació...");
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -42,16 +41,7 @@ export function PwaInstaller() {
       .catch(() => {
         setInstallStatus("No s'ha pogut registrar el Service Worker");
       });
-=======
-  const [installStatus, setInstallStatus] = useState("Instal·lació no disponible");
 
-  useEffect(() => {
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").catch(() => {
-        setInstallStatus("No s'ha pogut registrar el service worker");
-      });
-    }
->>>>>>> origin/main
 
     const onBeforeInstallPrompt = (event: Event) => {
       event.preventDefault();
@@ -64,11 +54,8 @@ export function PwaInstaller() {
     return () => {
       window.removeEventListener("beforeinstallprompt", onBeforeInstallPrompt);
     };
-<<<<<<< HEAD
   }, [basePath]);
-=======
-  }, []);
->>>>>>> origin/main
+
 
   const handleInstall = async () => {
     if (!deferredPrompt) return;

@@ -2,7 +2,7 @@
 
 :root {
   --background: #0b1020;
-<<<<<<< HEAD
+
   --background-soft: #121a33;
   --foreground: #f3f5fa;
   --muted: #c9d2ee;
@@ -29,19 +29,13 @@
   --card: #121a33;
   --border: #2f3a5a;
   --accent: #7c93ff;
-=======
-  --foreground: #f3f5fa;
-  --card: #121a33;
-  --border: #2f3a5a;
->>>>>>> origin/main
+
 }
 
 body {
   min-height: 100vh;
-<<<<<<< HEAD
+
   background: radial-gradient(circle at top, color-mix(in oklab, var(--accent) 28%, var(--background)), var(--background) 55%);
-=======
-  background: radial-gradient(circle at top, #1b2750, #0b1020 55%);
->>>>>>> origin/main
+
   color: var(--foreground);
 }

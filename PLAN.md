@@ -80,7 +80,7 @@
 - [x] Afegir dependència `@eslint/eslintrc` per compatibilitat explícita.
 - [x] Test/check: validació sintàctica dels fitxers modificats.
 - [x] Commit del pas.
-<<<<<<< HEAD
+
 
 
 ### Pas 11 — Hotfix GitHub Pages enablement
@@ -104,5 +104,4 @@
 - [x] Implementar selector de tema (clar, fosc, sistema).
 - [x] Test/check: validacions disponibles en entorn actual i screenshot.
 - [x] Commit del pas.
-=======
->>>>>>> origin/main
+
