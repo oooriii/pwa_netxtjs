@@ -11,9 +11,12 @@ const nextConfig: NextConfig = {
   },
   basePath,
   assetPrefix: basePath,
+<<<<<<< HEAD
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
+=======
+>>>>>>> origin/main
 };
 
 export default nextConfig;
