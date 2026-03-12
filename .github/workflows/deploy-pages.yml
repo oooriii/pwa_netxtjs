@@ -24,11 +24,9 @@ jobs:
           node-version: 22
       - name: Setup Pages
         uses: actions/configure-pages@v5
-<<<<<<< HEAD
         with:
           enablement: true
-=======
->>>>>>> origin/main
+
       - run: npm install
       - run: npm run build
       - name: Upload artifact
