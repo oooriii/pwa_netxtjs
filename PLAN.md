@@ -65,3 +65,10 @@
 - [x] Corregir l'import ESM cap a `core-web-vitals.js`.
 - [x] Test/check: validació del fitxer de configuració ESLint.
 - [x] Commit del pas.
+
+
+### Pas 9 — Hotfix lint config iterable
+- [x] Diagnosticar error `nextVitals is not iterable` al lint.
+- [x] Fer `eslint.config.mjs` robust davant export object/array.
+- [x] Test/check: validació sintàctica del fitxer de config.
+- [x] Commit del pas.
