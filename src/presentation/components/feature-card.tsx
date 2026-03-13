@@ -1,9 +1,25 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 
 import { Bell, Camera, Circle, LocateFixed, Play, ShieldCheck } from "lucide-react";
 
+=======
+import { Bell, Camera, Circle, LocateFixed, Play, ShieldCheck } from "lucide-react";
+>>>>>>> theirs
+=======
+import { Bell, Camera, Circle, LocateFixed, Play, ShieldCheck } from "lucide-react";
+>>>>>>> theirs
+=======
+import { Bell, Camera, Circle, LocateFixed, Play, ShieldCheck } from "lucide-react";
+>>>>>>> theirs
+=======
+import { Bell, Camera, Circle, LocateFixed, Play, ShieldCheck } from "lucide-react";
+>>>>>>> theirs
 import { Feature } from "@/domain/features/feature";
 import { FeatureService } from "@/application/features/feature-service";
 import { BrowserFeatureGateway } from "@/infrastructure/browser/browser-feature-gateway";
@@ -75,7 +91,19 @@ export function FeatureCard({ feature }: { feature: Feature }) {
         </Button>
         <Button size="sm" onClick={handleTest} disabled={!supported || status === "working"}>
           <Play className="mr-1 h-4 w-4" /> Provar
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
         </Button>
       </div>
     </article>

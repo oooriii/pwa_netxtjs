@@ -42,7 +42,19 @@ export function PwaInstaller() {
         setInstallStatus("No s'ha pogut registrar el Service Worker");
       });
 
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
     const onBeforeInstallPrompt = (event: Event) => {
       event.preventDefault();
       setDeferredPrompt(event as BeforeInstallPromptEvent);
@@ -56,7 +68,19 @@ export function PwaInstaller() {
     };
   }, [basePath]);
 
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
   const handleInstall = async () => {
     if (!deferredPrompt) return;
     await deferredPrompt.prompt();

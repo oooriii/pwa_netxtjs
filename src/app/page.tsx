@@ -2,10 +2,30 @@ import { FeatureService } from "@/application/features/feature-service";
 import { BrowserFeatureGateway } from "@/infrastructure/browser/browser-feature-gateway";
 import { FeatureCard } from "@/presentation/components/feature-card";
 import { PwaInstaller } from "@/presentation/components/pwa-installer";
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 
 import { ThemeSwitcher } from "@/presentation/components/theme-switcher";
 
 
+=======
+import { ThemeSwitcher } from "@/presentation/components/theme-switcher";
+
+>>>>>>> theirs
+=======
+import { ThemeSwitcher } from "@/presentation/components/theme-switcher";
+
+>>>>>>> theirs
+=======
+import { ThemeSwitcher } from "@/presentation/components/theme-switcher";
+
+>>>>>>> theirs
+=======
+import { ThemeSwitcher } from "@/presentation/components/theme-switcher";
+
+>>>>>>> theirs
 const featureService = new FeatureService(new BrowserFeatureGateway());
 
 export default function HomePage() {
@@ -21,7 +41,19 @@ export default function HomePage() {
           </p>
         </div>
         <ThemeSwitcher />
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
       </header>
 
       <PwaInstaller />

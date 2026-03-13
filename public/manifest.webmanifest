@@ -4,7 +4,19 @@
   "description": "Template PWA reutilitzable amb Next.js, DDD i SOLID",
   "start_url": "./",
   "scope": "./",
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
   "display": "standalone",
   "background_color": "#0b1020",
   "theme_color": "#0b1020",
@@ -12,13 +24,37 @@
   "icons": [
     {
       "src": "icon-192.svg",
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
       "sizes": "192x192",
       "type": "image/svg+xml"
     },
     {
       "src": "icon-512.svg",
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
       "sizes": "512x512",
       "type": "image/svg+xml"
     }
