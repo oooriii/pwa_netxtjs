@@ -62,3 +62,38 @@ El resultat es genera a `out/`.
    - Cas d'ús a `application`
    - Adapter a `infrastructure`
    - Card o vista a `presentation`
+
+## Flux recomanat per sincronitzar branques i fer PR
+
+Quan treballes amb una branca remota (per exemple `origin/codex/...`) i vols evitar conflictes:
+
+1. **Actualitza refs remotes**
+   ```bash
+   git fetch origin
+   ```
+2. **Crea o recupera la branca local que trackeja la remota**
+   ```bash
+   git checkout -b <branch-local> origin/<branch-remota>
+   # o, si ja existeix:
+   git checkout <branch-local>
+   git branch --set-upstream-to=origin/<branch-remota>
+   ```
+3. **Rebasa o fusiona `main` abans de tocar res**
+   ```bash
+   git fetch origin
+   git rebase origin/main
+   # alternativa: git merge origin/main
+   ```
+4. **Resol conflictes i valida**
+   ```bash
+   npm run lint
+   npm run build
+   ```
+5. **Publica els canvis al remot**
+   ```bash
+   git push -u origin <branch-local>
+   ```
+6. **Obre PR cap a `main`** i fes merge quan CI estigui en verd.
+
+> Si un agent resol conflictes al núvol però no fa `push`, els canvis només existeixen localment dins aquella sessió. Sempre cal `commit + push` perquè tu ho puguis veure des del teu local i obrir/mergejar el PR sense desajustos.
+
