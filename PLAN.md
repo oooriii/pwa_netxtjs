@@ -82,19 +82,6 @@
 - [x] Commit del pas.
 
 
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
 ### Pas 11 — Hotfix GitHub Pages enablement
 - [x] Diagnosticar error `Get Pages site failed` a `configure-pages`.
 - [x] Configurar `actions/configure-pages` amb `enablement: true`.
@@ -116,16 +103,3 @@
 - [x] Implementar selector de tema (clar, fosc, sistema).
 - [x] Test/check: validacions disponibles en entorn actual i screenshot.
 - [x] Commit del pas.
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
