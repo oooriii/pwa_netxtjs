@@ -11,35 +11,9 @@ const nextConfig: NextConfig = {
   },
   basePath,
   assetPrefix: basePath,
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
-
-=======
-  env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
-  },
->>>>>>> theirs
-=======
-  env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
-  },
->>>>>>> theirs
-=======
-  env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
-  },
->>>>>>> theirs
-=======
-  env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
-  },
->>>>>>> theirs
 };
 
 export default nextConfig;

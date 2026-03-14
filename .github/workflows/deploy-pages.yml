@@ -26,19 +26,7 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: true
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
 
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
       - run: npm install
       - run: npm run build
       - name: Upload artifact

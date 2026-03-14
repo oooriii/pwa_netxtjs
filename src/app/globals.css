@@ -2,19 +2,6 @@
 
 :root {
   --background: #0b1020;
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
   --background-soft: #121a33;
   --foreground: #f3f5fa;
   --muted: #c9d2ee;
@@ -41,41 +28,10 @@
   --card: #121a33;
   --border: #2f3a5a;
   --accent: #7c93ff;
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
 }
 
 body {
   min-height: 100vh;
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-
   background: radial-gradient(circle at top, color-mix(in oklab, var(--accent) 28%, var(--background)), var(--background) 55%);
-
-=======
-  background: radial-gradient(circle at top, color-mix(in oklab, var(--accent) 28%, var(--background)), var(--background) 55%);
->>>>>>> theirs
-=======
-  background: radial-gradient(circle at top, color-mix(in oklab, var(--accent) 28%, var(--background)), var(--background) 55%);
->>>>>>> theirs
-=======
-  background: radial-gradient(circle at top, color-mix(in oklab, var(--accent) 28%, var(--background)), var(--background) 55%);
->>>>>>> theirs
-=======
-  background: radial-gradient(circle at top, color-mix(in oklab, var(--accent) 28%, var(--background)), var(--background) 55%);
->>>>>>> theirs
   color: var(--foreground);
 }

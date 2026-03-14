@@ -82,19 +82,6 @@
 - [x] Commit del pas.
 
 
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
 ### Pas 11 — Hotfix GitHub Pages enablement
 - [x] Diagnosticar error `Get Pages site failed` a `configure-pages`.
 - [x] Configurar `actions/configure-pages` amb `enablement: true`.
@@ -116,16 +103,19 @@
 - [x] Implementar selector de tema (clar, fosc, sistema).
 - [x] Test/check: validacions disponibles en entorn actual i screenshot.
 - [x] Commit del pas.
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
 
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
+
+### Pas 14 — Guia de sincronització Git i PR
+- [x] Documentar flux recomanat de sincronització de branca remota/local.
+- [x] Documentar seqüència `commit + push + PR` per evitar divergències de context.
+- [x] Test/check: revisió de format markdown i validació general del projecte.
+- [x] Commit del pas.
+
+
+### Pas 15 — Hotfix workflows CI/Pages
+- [x] Eliminar markers de conflicte a `.github/workflows/deploy-pages.yml`.
+- [x] Evitar dependència de lockfile a `.github/workflows/nextjs.yml` substituint `npm ci` per `npm install`.
+- [x] Actualitzar versió de Node del workflow de Pages template per evitar warning de Node 20.
+- [x] Test/check: validació YAML i revisió de workflows.
+- [x] Commit del pas.
+
